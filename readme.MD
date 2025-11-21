@@ -1,4 +1,4 @@
-# 🐺 Cerbero-Scanner v5.0
+# 🐺 Cerbero-Scanner v1.0
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)

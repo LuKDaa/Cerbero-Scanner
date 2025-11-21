@@ -34,11 +34,11 @@ def print_banner():
     banner = f"""
 {Fore.RED}
    __    ___    ___     ___     ___    ___     ___
- / __|  | __|  | _ \\  | __ )  | __|  | _ \\  / _ \\
-| (__   | _|   |   /   | _\\   | _|   |   /  | (_) |
- \\___| |___|  |_|_\\  |___/   |___|  |_|_\\  \\___/ {Fore.RESET}
+ / __|  | __|  | _ \   | __ )  | __|  | _ \   / _ \
+| (__   | _|   |   /   | _\    | _|   |   /  | (_) |
+ \___|  |___|  |_|_\   |___/   |___|  |_|_\   \___/ {Fore.RESET}
    
-   {Fore.WHITE}>> AUTOMATED DAST PIPELINE v5.0 (Universal) <<{Fore.RESET}
+   {Fore.WHITE}>> AUTOMATED DAST PIPELINE v1.0 (Universal) <<{Fore.RESET}
    {Fore.CYAN}>> Creado por: Lucas (SysSecAdmin) <<{Fore.RESET}
     """
     print(banner)
@@ -65,7 +65,7 @@ def start_zap_docker():
         print(f"   {OK} Configurando red: Modo Host (Nativo Linux)")
         docker_config["network_mode"] = "host"
     else:
-        # En Windows/Mac, usamos bridge y mapeamos puertos
+        # En Windows/Mac, usa bridge y mapea puertos
         print(f"   {OK} Configurando red: Modo Bridge (Compatible Win/Mac)")
         docker_config["ports"] = {f"{ZAP_PORT}/tcp": ZAP_PORT}
         docker_config["extra_hosts"] = {"host.docker.internal": "host-gateway"}
@@ -79,7 +79,7 @@ def start_zap_docker():
         except:
             pass
         
-        # Lanzar con la configuracion dinamica (desempaqueta el diccionario)
+        # Lanza con la configuracion dinamica (desempaqueta el diccionario)
         container = client.containers.run(**docker_config)
         return container, "docker"
     except Exception as e:
