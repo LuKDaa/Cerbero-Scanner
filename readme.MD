@@ -1,5 +1,7 @@
 # 🐺 Cerbero-Scanner v1.0
 
+[![Cerbero CI](https://github.com/LuKDaa/Cerbero-Scanner/actions/workflows/python-app.yml/badge.svg)](https://github.com/LuKDaa/Cerbero-Scanner/actions/workflows/python-app.yml)
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20MacOS-lightgrey)
