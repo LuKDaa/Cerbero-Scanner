@@ -113,4 +113,4 @@ Cerbero-Scanner/
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ---
-*Creado con ❤️ por Lucas (Intento de SysSecAdmin)*
+*Creado con ❤️ por Lucas (Intento de Cybersecurity Engineer)*
